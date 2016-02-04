@@ -11,6 +11,12 @@ html {
   color: #fff;
 }
 
+.background {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
 a {
   text-decoration: none;
 }
@@ -21,31 +27,34 @@ a:hover {
 }
 
 .primary-btn {
-  display: inline-block;
-  margin: 1em;
-  padding: .5em 1em;
-  border-radius: 3px;
+  display: inherit;
+  margin: 3em;
+  padding: 3em 3em;
+  border-radius: 5px;
   text-decoration: none;
+  text-align: center;
   color: #000;
   background: #0099ff;
 }
 
 .secondary-btn {
-  display: inline-block;
-  margin: 1em;
-  padding: .5em 1em;
-  border-radius: 3px;
+  display: inherit;
+  margin: 3em;
+  padding: 3em 3em;
+  border-radius: 5px;
   text-decoration: none;
+  text-align: center;
   color: #000;
   background: #ffcc66;
 }
 
 .tertiary-btn {
-  display: inline-block;
-  margin: 1em;
-  padding: .5em 1em;
-  border-radius: 3px;
+  display: inherit;
+  margin: 3em;
+  padding: 3em 3em;
+  border-radius: 5px;
   text-decoration: none;
+  text-align: center;
   color: #000;
   background: #b266ff;
 }

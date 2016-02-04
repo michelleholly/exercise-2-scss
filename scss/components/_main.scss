@@ -9,6 +9,12 @@ html{
     }
 }
 
+.background {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
 a{
   text-decoration: none;
   &:hover{
@@ -18,13 +24,13 @@ a{
 }
 
 .primary-btn{
-    @include button(#0099ff);
+    @include button($light-blue);
 }
 
 .secondary-btn{
-    @include button(#ffcc66);
+    @include button($yellow);
 }
 
 .tertiary-btn{
-    @include button(#b266ff);
+    @include button($light-purple);
 }
