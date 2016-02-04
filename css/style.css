@@ -2,3 +2,50 @@
 html {
   font-family: "Open Sans", sans-serif;
 }
+
+.border {
+  border: 1px solid #ccc;
+}
+
+.border p {
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  background-color: #0099ff;
+}
+
+.primary-btn {
+  display: inline-block;
+  margin: 1em;
+  padding: .5em 1em;
+  border-radius: 3px;
+  text-decoration: none;
+  color: #000;
+  background: #0099ff;
+}
+
+.secondary-btn {
+  display: inline-block;
+  margin: 1em;
+  padding: .5em 1em;
+  border-radius: 3px;
+  text-decoration: none;
+  color: #000;
+  background: #ffcc66;
+}
+
+.tertiary-btn {
+  display: inline-block;
+  margin: 1em;
+  padding: .5em 1em;
+  border-radius: 3px;
+  text-decoration: none;
+  color: #000;
+  background: #b266ff;
+}
