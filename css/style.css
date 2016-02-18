@@ -85,3 +85,109 @@ body {
   text-align: center;
   display: inherit;
 }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+.menu-button-target {
+  cursor: pointer;
+  position: absolute;
+  z-index: 200;
+  right: 60px;
+  top: 60px;
+  height: 50px;
+  background-color: #33b6db;
+  padding: 0 10px;
+  transition: all 0.2s;
+}
+
+.menu-button-target.active {
+  background-color: transparent;
+}
+
+.menu-button-target.active .menu-button {
+  background-color: transparent;
+}
+
+.menu-button-target.active .menu-button:before {
+  transform: translateY(0%) rotate(45deg);
+  background-color: #ffffff;
+}
+
+.menu-button-target.active .menu-button:after {
+  transform: translateY(0%) rotate(-45deg);
+  background-color: #ffffff;
+}
+
+.menu-button {
+  position: relative;
+  top: 50%;
+  left: 0;
+  display: block;
+  width: 60px;
+  height: 4px;
+  margin-top: -2px;
+  background-color: #ffffff;
+  transition: all 0.2s;
+}
+
+.menu-button:before, .menu-button:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  background-color: #ffffff;
+  transition: all 0.2s;
+}
+
+.menu-button:before {
+  transform: translateY(-250%);
+}
+
+.menu-button:after {
+  transform: translateY(250%);
+}
+
+.menu-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(51, 182, 219, 0.9);
+  display: none;
+}
+
+.menu-overlay.active nav ul {
+  margin-top: 200px;
+  color: #ffffff;
+}
+
+nav {
+  overflow: hidden;
+}
+
+nav ul {
+  overflow: hidden;
+  margin-top: 0;
+  transition: margin-top 0.4s ease;
+}
+
+nav ul li {
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  list-style-type: none;
+  padding: 20px 0;
+  font-size: 50px;
+  transition: background-color 0.4s, color 0.2s;
+}
+
+nav ul li:hover {
+  color: #ffcc66;
+}
